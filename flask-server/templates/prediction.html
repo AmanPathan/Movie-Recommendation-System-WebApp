@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e485e19fd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/prediction.css">
+    <title>Movie.Ai</title>
+</head>
+<body>
+    <div className="col-md-12 result_pred">
+        <div className="col-md-10 display_pred">
+            <div className="container">
+                <div className="row">
+                  <div className="col-12 col-sm-8 col-md-6 col-lg-4 ">
+                    <div className="card-container">
+                      <div className="card-img">
+                        <p className="rating"><span>★</span> 8.2</p>
+                        <a className="card-link" target="_blank" href="" >Watch Now <i class="fas fa-play-circle" style={{color:'#f6d658'}}></i></a>
+                      </div>
+                    </div>
+                    <div className="movie_name">
+                      <h3>{props.title}</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

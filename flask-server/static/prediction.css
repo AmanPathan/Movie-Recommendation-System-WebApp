@@ -1,0 +1,12 @@
+*{
+    background-color: #262626;
+}
+.result_pred{
+    background-color: blue;
+    width: 100%;
+}
+.display_pred{
+    color: #fff;
+    background-color: red;
+}
+/* backgroundImage: `linear-gradient(to top,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),url(${props.link}) */
