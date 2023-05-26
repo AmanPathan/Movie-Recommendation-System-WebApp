@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import spin from '../images/loader.gif';
-require('../dotenv').config();
 
 // https://api.themoviedb.org/3/movie/{movieid}?api_key={apikey}&language=en-US  to get movie data 
 // https://api.themoviedb.org/3/trending/all/day?api_key={apikey}  trending movies data
@@ -13,7 +12,7 @@ require('../dotenv').config();
 const Result = () => {
     const [data, setdata] = useState([]);
     const [movies, setMovies] = useState([]);
-    const apikey= process.env.API_KEY;
+    const apikey = <YOUR_API_KEY_HERE>;
     useEffect(() => {
 
         fetch("/data").then((res) =>
