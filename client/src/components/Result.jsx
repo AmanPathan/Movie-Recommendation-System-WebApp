@@ -13,7 +13,7 @@ require('../dotenv').config();
 const Result = () => {
     const [data, setdata] = useState([]);
     const [movies, setMovies] = useState([]);
-
+    const apikey= process.env.API_KEY;
     useEffect(() => {
 
         fetch("/data").then((res) =>
