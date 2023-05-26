@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import spin from '../images/loader.gif';
+require('../dotenv').config();
 
 // https://api.themoviedb.org/3/movie/{movieid}?api_key={apikey}&language=en-US  to get movie data 
 // https://api.themoviedb.org/3/trending/all/day?api_key={apikey}  trending movies data
-// https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&api_key=1d870a7210df63ddf50fde18668e7a10
+// https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&api_key={apikey}
 // https://www.youtube.com/watch?v=BdJKm16Co6M trailer
-// https://api.themoviedb.org/3/movie/1726/videos?api_key=1d870a7210df63ddf50fde18668e7a10 yotube key
+// https://api.themoviedb.org/3/movie/1726/videos?api_key={apikey} yotube key
 
 
 const Result = () => {
@@ -20,7 +21,7 @@ const Result = () => {
                 setdata(data);
             })
         );
-        fetch("https://api.themoviedb.org/3/trending/all/day?api_key=1d870a7210df63ddf50fde18668e7a10")
+        fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=${apikey}`)
             .then(response => {
                 return response.json()
             })
