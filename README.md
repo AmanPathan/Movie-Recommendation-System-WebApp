@@ -1,5 +1,7 @@
 # Movie.ai
 
+## You can download Source Code from [GitLab](https://gitlab.com/amanpathan526/Movie-Recommendation-System-WebApp/-/tree/main)
+
 This is the Movie Recommendation System Project build using python and react
 I have used React for frontend part and Flask for all the backend part.
 
@@ -22,12 +24,10 @@ You need to have `npm`, `python` and `pip` installed in your system.
 1. **Clone** this repository in your local system.
 2. Install all the libraries mentioned in the [requirements.txt](/flask-server/) file with the command `pip install -r requirements.txt`
 3. Replace <YOUR_API_KEY_HERE> with your API_KEY in `/flask-server/app.py` at **line 13** and in `/client/src/components/Result.jsx` at **line 15**.
-4. You need to install a additional folder named [model](https://mega.nz/file/xaF3HRha#R0pTbL9OOxhub517S34i_b4fp_OoMYDVMfOsbSd-96Y). I have uploaded these files on Mega.nz as they are too big to push on GitHub.
-5. **Extract** Downloaded folder and copy this extracted folder to directory `/flask-server` 
-6. Open your `terminal/command prompt` from your project directory then run `cd ./flask-server` command and run the `app.py` file by executing the command `python ./app.py` .
-7. Now open another `terminal/command promp` in main directory and then run `cd ./client` command and run command `npm i`.
-8. Then start react server by executing command `npm start`.
-9. ***Congratulations!*** you have run the project.
+4. Open your `terminal/command prompt` from your project directory then run `cd ./flask-server` command and run the `app.py` file by executing the command `python ./app.py` .
+5. Now open another `terminal/command promp` in main directory and then run `cd ./client` command and run command `npm i`.
+6. Then start react server by executing command `npm start`.
+7. ***Congratulations!*** you have run the project.
 
 **Please do ⭐ the repository and Share with your friends, if it helped you in anyway**.
 
